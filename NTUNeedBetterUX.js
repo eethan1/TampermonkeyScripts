@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NTUNeedBetterUX
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
-// @updateUrl    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUNeedBetterUX.js
+// @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUNeedBetterUX.js
 // @version      0.1.1
 // @description  reload course selection page when it is about to expire
 // @author       eethan1
