@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         New ES5-Userscript
+// @name         NTUAutoLogin
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTULAutoLogin.js
