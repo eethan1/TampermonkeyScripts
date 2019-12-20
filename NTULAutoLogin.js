@@ -19,6 +19,6 @@
         $('.signinbutton').click();
     else if(location.href.match(/ceiba.ntu.edu.tw\/$/))
         $('form[name=login2]').submit();
-    else if(location.href.match(/https:\/\/ceiba.ntu.edu.tw/login_test.php/))
+    else if(location.href.match(/https:\/\/ceiba.ntu.edu.tw\/login_test.php/))
         $('form[name=login2]').submit();
 })();
