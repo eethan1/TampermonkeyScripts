@@ -4,7 +4,7 @@
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTULAutoLogin.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTULAutoLogin.js
-// @version      0.2
+// @version      0.3
 // @description  auto login
 // @author       eethan1
 // @match        https://*.ntu.edu.tw/*
