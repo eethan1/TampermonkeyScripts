@@ -4,7 +4,7 @@
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTULAutoLogin.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTULAutoLogin.js
-// @version      0.4
+// @version      0.4.2
 // @description  auto login
 // @author       eethan1
 // @match        https://*.ntu.edu.tw/*
@@ -23,5 +23,7 @@
         $('form[name=login2]').submit();
     else if(location.href.match(/https:\/\/adfs.ntu.edu.tw\/adfs\/ls\//)){
         document.querySelector('#ContentPlaceHolder1_SubmitButton').click();
+    }else if(location.href.match(/https:\/\/cool.ntu.edu.tw\/login\/portal/)){
+        saml.click();
     }
 })();
