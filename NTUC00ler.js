@@ -4,7 +4,7 @@
 // @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUC00ler.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUC00ler.js
-// @version      0.1
+// @version      0.1.2
 // @description  C00ler video plugin
 // @author       eethan1
 // @match        https://lti.dlc.ntu.edu.tw/courses/*/videos/*
@@ -29,16 +29,16 @@
         a.id = 'c00ler_download';
         a.href = vid.src;
         a.target = '_blank';
-        a.innerText = 'Download it';
+        a.innerText = 'Download it  ';
         a.style.fontSize = '20px';
         div01.appendChild(a);
 
-        f.innerHTML = "<label for='c00ler_rate'>aaaaaa</label><input id='c00ler_rate' placeholder='c00ler rate'>";
+        f.innerHTML = "<input id='c00ler_rate' placeholder='c00ler rate'>";
         f.action = "javascript:(function (){let vid=document.querySelector('video');vid.playbackRate=parseFloat(c00ler_rate.value); console.log(vid.playbackRate);})()";
         div02.appendChild(f);
         div0.appendChild(div01);
         div0.appendChild(div02);
-        vid.parentElement.appendChild(div0);
+        vid.parentElement.parentElement.insertBefore(div0,vid.parentElement.nextSibling);
         c00ler_rate.style.fontSize='20px';
     }
     setTimeout(after,4000);
