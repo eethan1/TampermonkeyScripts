@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         NTUC00ler
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
-// @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUC00ler.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUC00ler.js
-// @version      0.1.2
+// @version      0.1.3
 // @description  C00ler video plugin
 // @author       eethan1
 // @match        https://lti.dlc.ntu.edu.tw/courses/*/videos/*
