@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name         NTUAutoLogin
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
-// @require http://code.jquery.com/jquery-latest.js
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUAutoLogin.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/NTUAutoLogin.js
 // @version      0.5.1
