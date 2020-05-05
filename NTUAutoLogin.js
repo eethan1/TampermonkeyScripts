@@ -16,7 +16,7 @@
         document.querySelector('form').submit();
     else if(location.href.match(/mail.ntu.edu.tw\/owa\/auth\/logon.aspx/))
         document.querySelector('.signinbutton').click();
-    else if(location.href.match(/ceiba.ntu.edu.tw\/(index\.php)+$/))
+    else if(location.href.match(/ceiba.ntu.edu.tw\/(index\.php)*$/))
         document.querySelector('form[name=login2]').submit();
     else if(location.href.match(/ceiba.ntu.edu.tw\/login_test.php/))
         document.querySelector('form[name=login2]').submit();
