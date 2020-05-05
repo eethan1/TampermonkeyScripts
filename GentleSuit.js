@@ -7,9 +7,9 @@
 // @author       eethan1
 // @match        http*://hbo6.hboav.com/v3/player.php*
 // @grant        none
-// ==/UserScript==
 // @updateURL    https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/GentleSuit.js
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/GentleSuit.js
+// ==/UserScript==
 (function() {
     'user strict';
     console.log('match!');
