@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GentleSuit
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
-// @version      0.1.4
+// @version      0.1.6
 // @description  Be a gentle.
 // @author       eethan1
 // @match        http*://hbo6.hboav.com/*/player.php*
@@ -10,16 +10,19 @@
 // @downloadURL  https://raw.githubusercontent.com/eethan1/TampermonkeyScripts/master/GentleSuit.js
 // @run-at document-end
 // ==/UserScript==
-(function() {
+(async function() {
     'user strict';
+    let m3u8url = document.body.innerHTML.match(/'http.*m3u8.*'/)[0].slice(1,-1);
     console.log('match!');
-    console.log('remove inpley');
     let c = document.getElementById('inplayer');
     c.parentNode.removeChild(c);
-    let m3u8url = document.body.innerHTML.match(/'http.*m3u8.*'/)[0].slice(1,-1);
-    let a = document.createElement('a');
-    a.href = m3u8url;
-    a.innerText = 'm3u8';
-    document.body.insertBefore(a,document.body.childNodes[2])
-    console.log(m3u8url);
+    console.log('remove inpley');
+
+    console.log(document.getElementById);
+    console.log(document.body.children);
+    var d = document.body;
+    console.log(d);
+    d.insertAdjacentHTML('afterbegin',`
+       <a href="https://cjiso.ninja/5278?m3u8url=${encodeURIComponent(location.href)}"> m3u8 </a>
+    `);
 })();
