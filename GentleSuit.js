@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name         GentleSuit
 // @namespace    https://github.com/eethan1/TampermonkeyScripts
-// @require http://code.jquery.com/jquery-latest.js
-// @version      0.1.3
+// @version      0.1.4
 // @description  Be a gentle.
 // @author       eethan1
 // @match        http*://hbo6.hboav.com/*/player.php*
@@ -15,7 +14,8 @@
     'user strict';
     console.log('match!');
     console.log('remove inpley');
-    $('#inplayer').remove();
+    let c = document.getElementById('inplayer');
+    c.parentNode.removeChild(c);
     let m3u8url = document.body.innerHTML.match(/'http.*m3u8.*'/)[0].slice(1,-1);
     let a = document.createElement('a');
     a.href = m3u8url;
